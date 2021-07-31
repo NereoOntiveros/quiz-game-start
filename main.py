@@ -9,5 +9,6 @@ for dictionary in question_data:
     question_bank.append(question)
 
 quiz = QuizBrain(question_bank)
+
 while quiz.still_has_questions():
     quiz.next_question()
