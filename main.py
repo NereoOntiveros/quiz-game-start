@@ -8,6 +8,6 @@ for dictionary in question_data:
     question = Question(dictionary['text'], dictionary['answer'])
     question_bank.append(question)
 
-quiz_brain = QuizBrain(question_bank)
-
-quiz_brain.next_question()
+quiz = QuizBrain(question_bank)
+while quiz.still_has_questions():
+    quiz.next_question()
