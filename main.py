@@ -9,6 +9,5 @@ for dictionary in question_data:
     question_bank.append(question)
 
 quiz_brain = QuizBrain(question_bank)
-next_question = quiz_brain.next_question()
 
-input(f"{next_question}. (True/False):")
+quiz_brain.next_question()

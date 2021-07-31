@@ -6,6 +6,7 @@ class QuizBrain:
 
     def next_question(self):
         position = self.question_number
-        question_text = self.question_list[position].text
+        current_question = self.question_list[position]
+        question_text = current_question.text
 
-        return question_text
+        input(f"Q.{position}: {question_text} (True/False)")
